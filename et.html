@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="et.css">
+</head>
+<body >
+  <div id="outer">
+  <header><h1> EXPENSE TRACKER </h1></header>
+  <h2> Let's Start </h2>
+      <form action="" id="myform" >
+    <div id="set">
+         <label> Choose a Expense</label><br>
+         <input type="number" id="typeid" name="typeid" >
+         <br>
+         <label> Choose a description </label><br>
+         <input list="browsers" name="browserid"  id="browserid" placeholder="select one any" ><br>
+         <datalist id="browsers" >
+           <option value="Party">
+           <option value="Fuel">
+           <option value="Bill">
+        <option value="bar">
+         <option value="movie">
+         </datalist>
+         <br>
+         <label> Choose a category </label><br>
+         <select id="selectid" name="selectedid" >
+          <option value="" >select any one</option>
+            <option value="food">FOOD</option>
+            <option value="diesel">diesel</option>
+            <option value="petrol">petrol</option>
+            <option value=" E-bill">electricity bill</option>
+            <div id="mesg"></div>
+          </select><br><br>
+       <button id="submit" >Add Expense</button>
+        <br>
+        <br>
+      </div>
+      <div>
+        <ul id ="userlist"> </ul>
+      </div>
+</form>
+</div>
+<script src="et.js"></script>
+</body>
+</html>
